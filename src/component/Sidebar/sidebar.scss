@@ -1,0 +1,82 @@
+.sidebar {
+    width: 20%;
+    border-right: 1px solid rgb(199, 199, 199);
+    height: 90vh;
+    margin: 5px 0px 5px 5px;
+    position: fixed;
+    left: 0;
+
+    .link {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 10px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgb(201, 201, 201);
+        }
+    }
+    h4 {
+        margin: 0;
+        padding: 10px 0;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    p {
+        display: block;
+        width: 90%;
+        margin: 0 0 0 5px;
+        padding: 10px 5px 10px 5px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #000;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgb(201, 201, 201);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 102%;
+        background-color: white;
+        text-align: center;
+        height: 100vh;
+        
+        h4 {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        
+        p {
+            
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+        &.visble {
+            left: -3%;
+        }
+        &.hidden {
+            left: -105%;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .sidebar {
+        p {
+            text-align: center;
+            margin-left: 0px;
+            padding: 10px 0;
+        }
+    }
+}

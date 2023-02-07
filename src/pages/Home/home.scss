@@ -1,0 +1,24 @@
+.homeWrapper{
+
+    .wrap{
+        margin-top: 60px;
+        display: flex;
+
+        .questuins{
+            flex: 5;
+            margin-left: 21%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .homeWrapper{
+        .wrap{
+            margin-top: 60px;
+    
+            .questuins{
+                margin-left: 0%;
+            }
+        }
+    }
+}
